@@ -233,10 +233,10 @@ const updateTags = (type, tags) => {
                 newTags.push(newElement);
             }
         });
-    }
 
-    oldTags.forEach(tag => tag.parentNode.removeChild(tag));
-    newTags.forEach(tag => headElement.appendChild(tag));
+        oldTags.forEach(tag => tag.parentNode.removeChild(tag));
+        newTags.forEach(tag => headElement.appendChild(tag));
+    }
 
     return {
         oldTags,
